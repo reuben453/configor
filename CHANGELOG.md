@@ -11,8 +11,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - New boolean config key (ErrorOnUnmatchedKeys) to modify the behavior of Configor.
 
 ### Changed
-- Use yaml.v2 instead of yaml.v1
+- Use yaml.v2 library instead of yaml.v1
+
+## [1.1.0] - 2017-07-04
+
+[Xzya/configor](https://github.com/Xzya/configor) was forked from [jinzhu/configor](https://github.com/jinzhu/configor) and contains the following changes. This library ([reuben453/configor](https://github.com/reuben453/configor)) was forked from [Xzya/configor](https://github.com/Xzya/configor).
+
+### Changed
+- Ignore unexported fields. Configor no longer panics when it encounters unexported fields in the config struct it is populating.
+This closes https://github.com/jinzhu/configor/issues/23.
 
 ## [1.0.0]
 
-Library created by jinzhu [https://github.com/jinzhu/configor]
+Library created by jinzhu [jinzhu/configor](https://github.com/jinzhu/configor)
