@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - New boolean config key (ErrorOnUnmatchedKeys) to modify the behavior of Configor.
 
 ### Changed
-- Use yaml.v2 library instead of yaml.v1
+- Use yaml.v2 library instead of yaml.v1 for unmarshalling yaml files. This is a breaking change if, for example, you defined a SetYAML function for decoding custom types. Here is a [list of changes in yaml.v2](https://blog.labix.org/2014/09/22/announcing-yaml-v2-for-go).
 
 ## [1.1.0] - 2017-07-04
 
